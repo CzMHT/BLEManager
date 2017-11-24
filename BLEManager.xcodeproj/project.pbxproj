@@ -14,6 +14,9 @@
 		9EC68EFA1FC7EFCB00F07380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC68EF91FC7EFCB00F07380 /* Assets.xcassets */; };
 		9EC68EFD1FC7EFCB00F07380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC68EFB1FC7EFCB00F07380 /* LaunchScreen.storyboard */; };
 		9EC68F001FC7EFCB00F07380 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68EFF1FC7EFCB00F07380 /* main.m */; };
+		9EC68F0C1FC7F06E00F07380 /* BLEAssist.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F081FC7F06E00F07380 /* BLEAssist.m */; };
+		9EC68F0D1FC7F06E00F07380 /* BLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F0B1FC7F06E00F07380 /* BLEManager.m */; };
+		9EC68F101FC7F08C00F07380 /* BLEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F0F1FC7F08C00F07380 /* BLEController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		9EC68EFC1FC7EFCB00F07380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EC68EFE1FC7EFCB00F07380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC68EFF1FC7EFCB00F07380 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EC68F081FC7F06E00F07380 /* BLEAssist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEAssist.m; sourceTree = "<group>"; };
+		9EC68F091FC7F06E00F07380 /* BLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEManager.h; sourceTree = "<group>"; };
+		9EC68F0A1FC7F06E00F07380 /* BLEAssist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEAssist.h; sourceTree = "<group>"; };
+		9EC68F0B1FC7F06E00F07380 /* BLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEManager.m; sourceTree = "<group>"; };
+		9EC68F0E1FC7F08C00F07380 /* BLEController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEController.h; sourceTree = "<group>"; };
+		9EC68F0F1FC7F08C00F07380 /* BLEController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,7 @@
 		9EC68EE11FC7EFCB00F07380 = {
 			isa = PBXGroup;
 			children = (
+				9EC68F071FC7F06000F07380 /* Common */,
 				9EC68EEC1FC7EFCB00F07380 /* BLEManager */,
 				9EC68EEB1FC7EFCB00F07380 /* Products */,
 			);
@@ -64,6 +74,8 @@
 				9EC68EEE1FC7EFCB00F07380 /* AppDelegate.m */,
 				9EC68EF01FC7EFCB00F07380 /* ViewController.h */,
 				9EC68EF11FC7EFCB00F07380 /* ViewController.m */,
+				9EC68F0E1FC7F08C00F07380 /* BLEController.h */,
+				9EC68F0F1FC7F08C00F07380 /* BLEController.m */,
 				9EC68EF31FC7EFCB00F07380 /* Main.storyboard */,
 				9EC68EF91FC7EFCB00F07380 /* Assets.xcassets */,
 				9EC68EFB1FC7EFCB00F07380 /* LaunchScreen.storyboard */,
@@ -72,6 +84,17 @@
 				9EC68EF61FC7EFCB00F07380 /* BLEManager.xcdatamodeld */,
 			);
 			path = BLEManager;
+			sourceTree = "<group>";
+		};
+		9EC68F071FC7F06000F07380 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9EC68F0A1FC7F06E00F07380 /* BLEAssist.h */,
+				9EC68F081FC7F06E00F07380 /* BLEAssist.m */,
+				9EC68F091FC7F06E00F07380 /* BLEManager.h */,
+				9EC68F0B1FC7F06E00F07380 /* BLEManager.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC68EF21FC7EFCB00F07380 /* ViewController.m in Sources */,
+				9EC68F101FC7F08C00F07380 /* BLEController.m in Sources */,
 				9EC68EF81FC7EFCB00F07380 /* BLEManager.xcdatamodeld in Sources */,
+				9EC68F0C1FC7F06E00F07380 /* BLEAssist.m in Sources */,
 				9EC68F001FC7EFCB00F07380 /* main.m in Sources */,
 				9EC68EEF1FC7EFCB00F07380 /* AppDelegate.m in Sources */,
+				9EC68F0D1FC7F06E00F07380 /* BLEManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +309,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94K347Z9B9;
 				INFOPLIST_FILE = BLEManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cz.BLEManager;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.Bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,9 +324,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94K347Z9B9;
 				INFOPLIST_FILE = BLEManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cz.BLEManager;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.Bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
